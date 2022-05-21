@@ -44,6 +44,7 @@
   <ItemGroup>
     <Compile Include="Aliensvspredator.cs" />
     <Compile Include="JobGivers\JobGiver_AttackNearEntity.cs" />
+    <Compile Include="JobGivers\JobGiver_StickTogether.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

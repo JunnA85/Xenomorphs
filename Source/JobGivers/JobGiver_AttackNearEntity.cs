@@ -13,21 +13,17 @@ namespace Aliensvspredator.JobGivers
     {
         protected override Job TryGiveJob(Pawn pawn)
         {
-            List<Pawn> potentialTargetsFor = Find.CurrentMap.mapPawns.AllPawnsSpawned;
-            Log.Message(pawn.RaceProps.FleshType.defName);
+            List<Pawn> potentialTargetsFor = Find.CurrentMap.mapPawns.AllPawnsSpawned.Where(x => x.RaceProps.FleshType.defName != pawn.RaceProps.FleshType.defName).ToList();
             for (int i = 0; i < potentialTargetsFor.Count; i++)
             {
                 bool fenceBlocked = pawn.def.race.FenceBlocked;
 
                 Thing thing = potentialTargetsFor[i];
                 int distance = thing.Position.DistanceToSquared(pawn.Position);
-
-                Log.Message(potentialTargetsFor[i].Label+" is "+Convert.ToString(distance)+" away");
                 if (distance < 15)
                 {
-
-                    Log.Message(potentialTargetsFor[i].Label + " is close Af");
-                    if (potentialTargetsFor[i].RaceProps.FleshType != pawn.RaceProps.FleshType && potentialTargetsFor[i] != null && potentialTargetsFor[i] != pawn && pawn.CanReach(potentialTargetsFor[i], PathEndMode.Touch, Danger.Deadly, false, fenceBlocked, TraverseMode.ByPawn ))
+                    Log.Message("Attacking "+potentialTargetsFor[i].Label);
+                    if (potentialTargetsFor[i].RaceProps.FleshType.defName != pawn.RaceProps.FleshType.defName && potentialTargetsFor[i] != null && potentialTargetsFor[i] != pawn && pawn.CanReach(potentialTargetsFor[i], PathEndMode.Touch, Danger.Deadly, false, fenceBlocked, TraverseMode.ByPawn ))
                     {
                         return this.MeleeAttackJob(potentialTargetsFor[i], fenceBlocked);
                     }

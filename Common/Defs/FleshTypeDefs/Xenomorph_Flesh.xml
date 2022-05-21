@@ -6,15 +6,15 @@
         <corpseCategory>Xenomorph_Dead</corpseCategory>
         <genericWounds>
             <li>
-                <texture>Things/Pawn/Wounds/WoundFleshA</texture>
+                <texture>Things/Pawn/Wounds/Xenomorph_Wound</texture>
                 <color>0.23,0.20,0.17</color>
             </li>
             <li>
-                <texture>Things/Pawn/Wounds/WoundFleshB</texture>
+                <texture>Things/Pawn/Wounds/Xenomorph_Wound</texture>
                 <color>0.23,0.20,0.17</color>
             </li>
             <li>
-                <texture>Things/Pawn/Wounds/WoundFleshC</texture>
+                <texture>Things/Pawn/Wounds/Xenomorph_Wound</texture>
                 <color>0.23,0.20,0.17</color>
             </li>
         </genericWounds>

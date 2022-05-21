@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Defs>
+    <ThingCategoryDef>
+        <defName>Xenomorph_Dead</defName>
+        <label>Xenomorph corpses</label>
+        <parent>Corpses</parent>
+    </ThingCategoryDef>
+</Defs>

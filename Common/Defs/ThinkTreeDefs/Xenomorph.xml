@@ -5,6 +5,7 @@
         <thinkRoot Class="ThinkNode_Priority">
             <subNodes>
                 <li Class="Aliensvspredator.JobGivers.JobGiver_AttackNearEntity" />
+                <li Class="Aliensvspredator.JobGivers.JobGiver_StickTogether" />
             </subNodes>
         </thinkRoot>
     </ThinkTreeDef>
