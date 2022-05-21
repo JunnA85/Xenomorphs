@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef Abstract="True" ParentName="AnimalThingBase" Name="Xenomorph_Base">
+    <devNote>xenomorph</devNote>
+    <statBases>
+      <ToxicSensitivity>0</ToxicSensitivity>
+      <ComfyTemperatureMax>60</ComfyTemperatureMax>
+    </statBases>
+    <race>
+      <thinkTreeConstant>XenomorphConstant</thinkTreeConstant>
+      <fleshType>Insectoid</fleshType>
+      <bloodDef>Filth_BloodInsect</bloodDef>
+      <meatColor>(160,168,139)</meatColor>
+      <meatMarketValue>0.5</meatMarketValue>
+      <foodType>CarnivoreAnimalStrict</foodType>
+      <manhunterOnDamageChance>1</manhunterOnDamageChance>
+    </race>
+    <ingredient>
+      <mergeCompatibilityTags>
+        <li MayRequire="Ludeon.RimWorld.Ideology">InsectMeat</li>
+      </mergeCompatibilityTags>
+    </ingredient>
+    <receivesSignals>true</receivesSignals>
+    <comps>
+      <li Class="CompProperties_CanBeDormant" />
+      <li Class="CompProperties_WakeUpDormant">
+        <wakeUpOnDamage>true</wakeUpOnDamage>
+      </li>
+    </comps>
+  </ThingDef>
+  </Defs>

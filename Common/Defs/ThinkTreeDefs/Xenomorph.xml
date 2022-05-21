@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <ThinkTreeDef>
+        <defName>XenomorphConstant</defName>
+        <thinkRoot Class="ThinkNode_Priority">
+            <subNodes>
+                <li Class="Aliensvspredator.JobGivers.JobGiver_AttackNearEntity" />
+            </subNodes>
+        </thinkRoot>
+    </ThinkTreeDef>
+</Defs>
