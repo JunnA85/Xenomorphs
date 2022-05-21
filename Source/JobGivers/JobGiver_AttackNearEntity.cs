@@ -13,23 +13,28 @@ namespace Aliensvspredator.JobGivers
     {
         protected override Job TryGiveJob(Pawn pawn)
         {
-            List<IAttackTarget> potentialTargetsFor = pawn.Map.attackTargetsCache.GetPotentialTargetsFor(pawn);
-            Log.Message("Test");
-            
+            List<Pawn> potentialTargetsFor = Find.CurrentMap.mapPawns.AllPawnsSpawned;
+            Log.Message(pawn.RaceProps.FleshType.defName);
             for (int i = 0; i < potentialTargetsFor.Count; i++)
             {
-                var distance = Math.Sqrt((Math.Pow(pawn.Position.x - pawn.Position.y, 2) + Math.Pow(potentialTargetsFor[i].Thing.Position.x - potentialTargetsFor[i].Thing.Position.y, 2)));
-
                 bool fenceBlocked = pawn.def.race.FenceBlocked;
-                if (distance < 5)
+
+                Thing thing = potentialTargetsFor[i];
+                int distance = thing.Position.DistanceToSquared(pawn.Position);
+
+                Log.Message(potentialTargetsFor[i].Label+" is "+Convert.ToString(distance)+" away");
+                if (distance < 15)
                 {
-                    if (potentialTargetsFor[i] != null && pawn.CanReach(potentialTargetsFor[i].Thing, PathEndMode.Touch, Danger.Deadly, false, fenceBlocked, TraverseMode.ByPawn))
+
+                    Log.Message(potentialTargetsFor[i].Label + " is close Af");
+                    if (potentialTargetsFor[i].RaceProps.FleshType != pawn.RaceProps.FleshType && potentialTargetsFor[i] != null && potentialTargetsFor[i] != pawn && pawn.CanReach(potentialTargetsFor[i], PathEndMode.Touch, Danger.Deadly, false, fenceBlocked, TraverseMode.ByPawn ))
                     {
-                        return this.MeleeAttackJob(potentialTargetsFor[i].Thing, fenceBlocked);
+                        return this.MeleeAttackJob(potentialTargetsFor[i], fenceBlocked);
                     }
                 }
 
             }
+            
             return null;
         }
         private Job MeleeAttackJob(Thing target, bool canBashFences)

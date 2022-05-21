@@ -8,8 +8,8 @@
       <ComfyTemperatureMax>60</ComfyTemperatureMax>
     </statBases>
     <race>
-      <thinkTreeConstant>XenomorphConstant</thinkTreeConstant>
-      <fleshType>Insectoid</fleshType>
+      <thinkTreeMain>Xenomorph_Main</thinkTreeMain>
+      <fleshType>Xenomorph_Flesh</fleshType>
       <bloodDef>Filth_BloodInsect</bloodDef>
       <meatColor>(160,168,139)</meatColor>
       <meatMarketValue>0.5</meatMarketValue>
@@ -29,4 +29,5 @@
       </li>
     </comps>
   </ThingDef>
+  
   </Defs>
