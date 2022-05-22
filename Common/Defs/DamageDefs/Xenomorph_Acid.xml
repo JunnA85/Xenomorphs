@@ -1,0 +1,24 @@
+<Defs>
+    <DamageDef Name="Acid">
+        <defName>Acid</defName>
+        <workerClass>Aliensvspredator.DamageWorkers.DamageWorker_Acid</workerClass>
+        <label>acid</label>
+        <hasForcefulImpact>false</hasForcefulImpact>
+        <makesBlood>true</makesBlood>
+        <canInterruptJobs>false</canInterruptJobs>
+        <externalViolence>true</externalViolence>
+        <deathMessage>{0} has died of acid burns.</deathMessage>
+        <hediff>AcidBurn</hediff>
+        <armorCategory>Heat</armorCategory>
+        <minDamageToFragment>15</minDamageToFragment>
+        <defaultDamage>10</defaultDamage>
+        <defaultArmorPenetration>0</defaultArmorPenetration>
+        <explosionHeatEnergyPerCell>15</explosionHeatEnergyPerCell>
+        <explosionCellFleck>BlastFlame</explosionCellFleck>
+        <explosionColorCenter>(1, 0.7, 0.7)</explosionColorCenter>
+        <explosionColorEdge>(1, 1, 0.7)</explosionColorEdge>
+        <soundExplosion>Explosion_Flame</soundExplosion>
+        <combatLogRules>Damage_Flame</combatLogRules>
+        <canUseDeflectMetalEffect>false</canUseDeflectMetalEffect>
+    </DamageDef>
+</Defs>

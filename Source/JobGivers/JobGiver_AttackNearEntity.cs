@@ -20,10 +20,10 @@ namespace Aliensvspredator.JobGivers
 
                 Thing thing = potentialTargetsFor[i];
                 int distance = thing.Position.DistanceToSquared(pawn.Position);
-                if (distance < 15)
+                if (distance < 45)
                 {
                     Log.Message("Attacking "+potentialTargetsFor[i].Label);
-                    if (potentialTargetsFor[i].RaceProps.FleshType.defName != pawn.RaceProps.FleshType.defName && potentialTargetsFor[i] != null && potentialTargetsFor[i] != pawn && pawn.CanReach(potentialTargetsFor[i], PathEndMode.Touch, Danger.Deadly, false, fenceBlocked, TraverseMode.ByPawn ))
+                    if (!potentialTargetsFor[i].Downed && potentialTargetsFor[i].RaceProps.FleshType.defName != pawn.RaceProps.FleshType.defName && potentialTargetsFor[i] != null && potentialTargetsFor[i] != pawn && pawn.CanReach(potentialTargetsFor[i], PathEndMode.Touch, Danger.Deadly, false, fenceBlocked, TraverseMode.ByPawn ))
                     {
                         return this.MeleeAttackJob(potentialTargetsFor[i], fenceBlocked);
                     }

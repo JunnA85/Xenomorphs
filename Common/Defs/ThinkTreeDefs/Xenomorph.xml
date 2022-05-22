@@ -4,9 +4,16 @@
         <defName>Xenomorph_Main</defName>
         <thinkRoot Class="ThinkNode_Priority">
             <subNodes>
-                <li Class="Aliensvspredator.JobGivers.JobGiver_AttackNearEntity" />
-                <li Class="Aliensvspredator.JobGivers.JobGiver_StickTogether" />
+                <li Class="Aliensvspredator.JobGivers.JobGiver_AttackNearEntity">
+                </li>
+                <li Class="Aliensvspredator.JobGivers.JobGiver_StickTogether">
+                    </li>
+                <li Class="JobGiver_WanderAnywhere">
+                    <maxDanger>Deadly</maxDanger>
+                    <ticksBetweenWandersRange>120~240</ticksBetweenWandersRange>
+                </li>
             </subNodes>
+
         </thinkRoot>
     </ThinkTreeDef>
 </Defs>

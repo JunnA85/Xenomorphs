@@ -1,0 +1,16 @@
+<Defs>
+    <ThingDef>
+        <defName>Acid</defName>
+        <label>acid</label>
+        <thingClass>Aliensvspredator.Acid</thingClass>
+        <category>Attachment</category>
+        <tickerType>Normal</tickerType>
+        <graphicData>
+            <texPath>Things/Special/Fire</texPath>
+            <graphicClass>Graphic_Flicker</graphicClass>
+            <shaderType>TransparentPostLight</shaderType>
+        </graphicData>
+        <altitudeLayer>PawnState</altitudeLayer>
+        <useHitPoints>false</useHitPoints>
+    </ThingDef>
+</Defs>

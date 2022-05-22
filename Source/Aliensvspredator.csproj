@@ -42,7 +42,11 @@
     <None Include="..\Common\Patches\**" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Acid.cs" />
     <Compile Include="Aliensvspredator.cs" />
+    <Compile Include="AcidUtility.cs" />
+    <Compile Include="DamageWorkers\DamageWorker_Acid.cs" />
+    <Compile Include="DeathActionWorkers\DeathActionWorker_AcidSpill.cs" />
     <Compile Include="JobGivers\JobGiver_AttackNearEntity.cs" />
     <Compile Include="JobGivers\JobGiver_StickTogether.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -6,7 +6,7 @@
     <label>Xenomorph Drone</label>
     <description>One of the deadliest of all known alien species, these creatures require a host organism in order to reproduce. The appearance of the Xenomorph can vary depending on the host in which the embryo is implanted. The Human phenotype is generally around 7–9 feet (~ 2.13 - 2.74 meters) in height and roughly 181.43 to 272.15 kilograms (400-600 pounds) in weight, with a long, muscular tail and large, curved, oblong head.</description>
     <statBases>
-      <MoveSpeed>3.75</MoveSpeed>
+      <MoveSpeed>7</MoveSpeed>
       <ArmorRating_Blunt>0.60</ArmorRating_Blunt>
       <ArmorRating_Sharp>0.85</ArmorRating_Sharp>
       <ComfyTemperatureMin>0</ComfyTemperatureMin>

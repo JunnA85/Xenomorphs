@@ -1,0 +1,23 @@
+<Defs>
+    <ThingDef ParentName="BaseFilth">
+        <defName>Xenomorph_Blood</defName>
+        <label>acidic blood</label>
+        <statBases>
+            <Beauty>-14</Beauty>
+            <Cleanliness>-10</Cleanliness>
+        </statBases>
+        <thingClass>LiquidFuel</thingClass>
+        <useHitPoints>true</useHitPoints>
+        <tickerType>Normal</tickerType>
+        <graphicData>
+            <texPath>Things/Filth/Spatter</texPath>
+            <color>(250, 225, 0, 180)</color>
+        </graphicData>
+        <filth>
+            <rainWashes>true</rainWashes>
+            <cleaningWorkToReduceThickness>90</cleaningWorkToReduceThickness>
+            <canFilthAttach>true</canFilthAttach>
+        </filth>
+    </ThingDef>
+
+</Defs>
