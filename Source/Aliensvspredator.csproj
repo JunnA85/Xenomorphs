@@ -45,11 +45,20 @@
     <Compile Include="Acid.cs" />
     <Compile Include="Aliensvspredator.cs" />
     <Compile Include="AcidUtility.cs" />
-    <Compile Include="DamageWorkers\DamageWorker_Acid.cs" />
-    <Compile Include="DeathActionWorkers\DeathActionWorker_AcidSpill.cs" />
+    <Compile Include="DamageWorkers\DamageWorker_Impregnate.cs" />
+    <Compile Include="HediffGivers\HediffGiver_XenoEmbryo.cs" />
+    <Compile Include="Hediffs\Hediff_FacehuggerGrab.cs" />
+    <Compile Include="Hediffs\XenoHediffDefOf.cs" />
     <Compile Include="JobGivers\JobGiver_AttackNearEntity.cs" />
+    <Compile Include="JobGivers\JobGiver_ImpregnateNearHumanoid.cs" />
     <Compile Include="JobGivers\JobGiver_StickTogether.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ThingDefs\XenoThingDefOf.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="HediffComps\" />
+    <Folder Include="HediffComp_Properties\" />
+    <Folder Include="ToolCapacityDefs\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

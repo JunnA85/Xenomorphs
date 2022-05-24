@@ -1,0 +1,24 @@
+<Defs>
+    <LifeStageDef>
+        <defName>Facehugger_Adult</defName>
+        <label>Mature</label>
+        <voxPitch>1.2</voxPitch>
+        <bodySizeFactor>1</bodySizeFactor>
+        <foodMaxFactor>0.2</foodMaxFactor>
+        <healthScaleFactor>1</healthScaleFactor>
+        <hungerRateFactor>1</hungerRateFactor>
+        <marketValueFactor>1</marketValueFactor>
+        <meleeDamageFactor>1</meleeDamageFactor>
+    </LifeStageDef>
+    <LifeStageDef>
+        <defName>Xenomorph_Adult</defName>
+        <label>Mature</label>
+        <voxPitch>1.2</voxPitch>
+        <bodySizeFactor>1</bodySizeFactor>
+        <foodMaxFactor>0.2</foodMaxFactor>
+        <healthScaleFactor>1</healthScaleFactor>
+        <hungerRateFactor>1</hungerRateFactor>
+        <marketValueFactor>1</marketValueFactor>
+        <meleeDamageFactor>1</meleeDamageFactor>
+    </LifeStageDef>
+</Defs>

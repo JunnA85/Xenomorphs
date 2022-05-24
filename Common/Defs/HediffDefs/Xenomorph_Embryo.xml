@@ -1,0 +1,118 @@
+<Defs>
+    <HediffDef ParentName="InfectionBase">
+        <defName>Embryo</defName>
+        <label>Xenomorph embryo</label>
+        <description>An embryo of alien creture.</description>
+        <makesSickThought>true</makesSickThought>
+        <lethalSeverity>1</lethalSeverity>
+        <tendable>false</tendable>
+        <comps>
+            <li Class="HediffCompProperties_Immunizable">
+                <severityPerDayNotImmune>0.666</severityPerDayNotImmune>
+                <immunityPerDaySick>0</immunityPerDaySick>
+                <severityPerDayImmune>-0.333</severityPerDayImmune>
+                <immunityPerDayNotSick>-0.02</immunityPerDayNotSick>
+            </li>
+        </comps>
+        <stages>
+            <li>
+                <label>minor</label>
+                <painOffset>0.2</painOffset>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <offset>-0.05</offset>
+                    </li>
+                    <li>
+                        <capacity>Manipulation</capacity>
+                        <offset>-0.05</offset>
+                    </li>
+                </capMods>
+            </li>
+            <li>
+                <minSeverity>0.6</minSeverity>
+                <label>major</label>
+                <painOffset>0.35</painOffset>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <offset>-0.2</offset>
+                    </li>
+                    <li>
+                        <capacity>Manipulation</capacity>
+                        <offset>-0.2</offset>
+                    </li>
+                </capMods>
+            </li>
+            <li>
+                <minSeverity>0.8</minSeverity>
+                <label>extreme</label>
+                <painOffset>0.6</painOffset>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <offset>-0.3</offset>
+                    </li>
+                    <li>
+                        <capacity>Manipulation</capacity>
+                        <offset>-0.3</offset>
+                    </li>
+                </capMods>
+            </li>
+            <li>
+                <minSeverity>0.9</minSeverity>
+                <label>extreme</label>
+                <lifeThreatening>true</lifeThreatening>
+                <painOffset>0.85</painOffset>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <offset>-0.3</offset>
+                    </li>
+                    <li>
+                        <capacity>Manipulation</capacity>
+                        <offset>-0.3</offset>
+                    </li>
+                    <li>
+                        <capacity>Breathing</capacity>
+                        <offset>-0.15</offset>
+                    </li>
+                </capMods>
+            </li>
+        </stages>
+    </HediffDef>
+    <HediffDef ParentName="AddedBodyPartBase">
+        <hediffClass>Aliensvspredator.Hediffs.XenoHediffDefOf</hediffClass>
+        <defName>Facehugger_Grab</defName>
+
+        <label>Facehugger grab</label>
+        <labelNoun>a bionic eye</labelNoun>
+
+        <description>An installed bionic eye.</description>
+
+        <spawnThingOnRemoved>BionicEye</spawnThingOnRemoved>
+
+        <woundAnchorRange>0</woundAnchorRange>
+
+        <displayWound>true</displayWound>
+
+    </HediffDef>
+    <ThingDef>
+        <thingClass>Aliensvspredator.ThingDefs.XenoThingDefOf</thingClass>
+        <defName>Facehugger_Grab</defName>
+        <label>Xenomorph</label>
+        <description>An advanced artificial eye. With its biogel nerve-link, internal signal pre-processor, and wide-spectrum sensors, it is better than a biological eye in almost every way. A lattice-dust healing system allows it to recover from damage.</description>
+        <graphicData>
+            <texPath>Things/Pawn/Xenomorph/Xenomorph_FaceHugger_Mask_east</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>0.80</drawSize>
+            <color>(189,169,118)</color>
+        </graphicData>
+        <thingSetMakerTags>
+            <li>RewardStandardMidFreq</li>
+        </thingSetMakerTags>
+        <statBases>
+            <Mass>0.3</Mass>
+        </statBases>
+    </ThingDef>
+</Defs>

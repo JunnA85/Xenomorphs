@@ -1,0 +1,15 @@
+<Defs>
+    <ManeuverDef>
+        <defName>Xenomorph_Impregnate</defName>
+        <requiredCapacity>Xenomorph_Impregnate</requiredCapacity>
+        <verb>
+            <verbClass>Verb_MeleeAttackDamage</verbClass>
+            <meleeDamageDef>Xenomorph_Impregnate</meleeDamageDef>
+        </verb>
+        <logEntryDef>MeleeAttack</logEntryDef>
+        <combatLogRulesHit>Maneuver_Bite_MeleeHit</combatLogRulesHit>
+        <combatLogRulesDeflect>Maneuver_Bite_MeleeDeflect</combatLogRulesDeflect>
+        <combatLogRulesMiss>Maneuver_Bite_MeleeMiss</combatLogRulesMiss>
+        <combatLogRulesDodge>Maneuver_Bite_MeleeDodge</combatLogRulesDodge>
+    </ManeuverDef>
+</Defs>

@@ -1,7 +1,7 @@
 <Defs>
     <DamageDef Name="Acid">
         <defName>Acid</defName>
-        <workerClass>Aliensvspredator.DamageWorkers.DamageWorker_Acid</workerClass>
+        <!-- </defName><workerClass>Aliensvspredator.DamageWorkers.DamageWorker_Acid</workerClass> -->
         <label>acid</label>
         <hasForcefulImpact>false</hasForcefulImpact>
         <makesBlood>true</makesBlood>

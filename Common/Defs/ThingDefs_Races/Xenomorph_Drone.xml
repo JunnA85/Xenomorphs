@@ -6,7 +6,7 @@
     <label>Xenomorph Drone</label>
     <description>One of the deadliest of all known alien species, these creatures require a host organism in order to reproduce. The appearance of the Xenomorph can vary depending on the host in which the embryo is implanted. The Human phenotype is generally around 7–9 feet (~ 2.13 - 2.74 meters) in height and roughly 181.43 to 272.15 kilograms (400-600 pounds) in weight, with a long, muscular tail and large, curved, oblong head.</description>
     <statBases>
-      <MoveSpeed>7</MoveSpeed>
+      <MoveSpeed>5.5</MoveSpeed>
       <ArmorRating_Blunt>0.60</ArmorRating_Blunt>
       <ArmorRating_Sharp>0.85</ArmorRating_Sharp>
       <ComfyTemperatureMin>0</ComfyTemperatureMin>
@@ -56,15 +56,7 @@
       <trainability>Intermediate</trainability>
       <lifeStageAges>
         <li>
-          <def>EusocialInsectLarva</def>
-          <minAge>0</minAge>
-        </li>
-        <li>
-          <def>EusocialInsectJuvenile</def>
-          <minAge>0.03</minAge>
-        </li>
-        <li>
-          <def>EusocialInsectAdult</def>
+          <def>Xenomorph_Adult</def>
           <minAge>0.4</minAge>
           <soundWounded>Pawn_Megascarab_Wounded</soundWounded>
           <soundDeath>Pawn_Megascarab_Death</soundDeath>
@@ -92,32 +84,9 @@
       <li>
         <bodyGraphicData>
           <texPath>Things/Pawn/Xenomorph/Xenomorph_Drone_New_Dark</texPath>
-          <drawSize>1.5</drawSize>
-          <color>(255,255,255)</color>
-        </bodyGraphicData>
-        <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/Megascarab/Dessicated_Megascarab</texPath>
-          <drawSize>1</drawSize>
-        </dessicatedBodyGraphicData>
-      </li>
-      <li>
-        <bodyGraphicData>
-          <texPath>Things/Pawn/Xenomorph/Xenomorph_Drone_New_Dark</texPath>
-          <drawSize>1.25</drawSize>
-          <color>(255,255,255)</color>
-        </bodyGraphicData>
-        <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/Megascarab/Dessicated_Megascarab</texPath>
-          <drawSize>1.25</drawSize>
-        </dessicatedBodyGraphicData>
-      </li>
-      <li>
-        <bodyGraphicData>
-          <texPath>Things/Pawn/Xenomorph/Xenomorph_Drone_New_Dark</texPath>
-          <drawSize>1.5</drawSize>
-          <color>(255,255,255)</color>
+          <drawSize>2</drawSize>
           <shadowData>
-            <volume>(0.2, 0.3, 0.2)</volume>
+            <volume>(0, 0, 0)</volume>
             <offset>(0,0,0)</offset>
           </shadowData>
         </bodyGraphicData>

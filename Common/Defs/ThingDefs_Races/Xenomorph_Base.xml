@@ -8,13 +8,15 @@
       <ComfyTemperatureMax>60</ComfyTemperatureMax>
     </statBases>
     <race>
-      <deathActionWorkerClass>Aliensvspredator.DeathActionWorkers.DeathActionWorker_AcidSpill</deathActionWorkerClass>
+      <!-- <deathActionWorkerClass>Aliensvspredator.DeathActionWorkers.DeathActionWorker_AcidSpill</deathActionWorkerClass> -->
       <thinkTreeMain>Xenomorph_Main</thinkTreeMain>
       <fleshType>Xenomorph_Flesh</fleshType>
       <bloodDef>Xenomorph_Blood</bloodDef>
       <meatColor>(160,168,139)</meatColor>
       <meatMarketValue>0.5</meatMarketValue>
-      <foodType>CarnivoreAnimalStrict</foodType>
+      <foodType>Corpse, CarnivoreAnimalStrict</foodType>
+      <baseHungerRate>0.0</baseHungerRate>
+      <baseHealthScale>1.5</baseHealthScale>
       <manhunterOnDamageChance>1</manhunterOnDamageChance>
     </race>
     <receivesSignals>true</receivesSignals>

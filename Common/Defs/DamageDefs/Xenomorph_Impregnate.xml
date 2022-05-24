@@ -1,0 +1,12 @@
+<Defs>
+    <DamageDef ParentName="Bite">
+        <defName>Xenomorph_Impregnate</defName>
+        <label>Facehugger attachment</label>
+        <additionalHediffs>
+            <li>
+                <hediff>Embryo</hediff>
+            </li>
+        </additionalHediffs>
+        <impactSoundType>Toxic</impactSoundType>
+    </DamageDef>
+</Defs>
